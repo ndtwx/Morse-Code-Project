@@ -14,9 +14,6 @@ morse_dict = {
 morse_dict_swap = {v: k for k, v in morse_dict.items()}
 morse_code_list = [value for (key, value) in morse_dict.items()]
 
-
-# print(morse_dict_swap)
-# print(list_of_morse_signs)
 def converter(option):
 
     if option == "exit":
@@ -48,7 +45,6 @@ def converter(option):
 
     else:
         print("You have chosen the wrong option, Please choose one of the available options\n")
-
 
 def start(should_continue=True):
     while should_continue:
