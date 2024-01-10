@@ -1,6 +1,6 @@
 TEXT/MORSE CODE CONVERTER
 
-This is a simple program includes two options to either convert text into Morse code
+This is a simple program created using python which includes two options to either convert text into Morse code
 or Morse code back to text.
 
 The program will run continuously until the user choose the exit option
