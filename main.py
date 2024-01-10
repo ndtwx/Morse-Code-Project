@@ -12,7 +12,7 @@ morse_dict = {
 }
 
 morse_dict_swap = {v: k for k, v in morse_dict.items()}
-list_of_morse_signs = [value for (key, value) in morse_dict.items()]
+morse_code_list = [value for (key, value) in morse_dict.items()]
 
 # print(morse_dict_swap)
 # print(list_of_morse_signs)
@@ -27,6 +27,22 @@ def converter(option):
 
         print(f"Converted text: {converted_text}\n")
 
+    if option == "2":
+        code = input("\nType your code here: ").split(" ")
+
+        converted_code = ""
+
+        for char in code:
+            if char not in morse_code_list:
+                print("\nThere are no such codes, please enter again.\n")
+                start()
+
+            else:
+                converted_code += morse_dict_swap[char]
+
+        print(f"Converted code: {converted_code}\n")
+
+
     else:
         print("\nYou have chosen the wrong option, Please choose one of the available options\n")
 
@@ -34,7 +50,8 @@ def start():
     should_continue = True
     while should_continue:
         print("|TEXT/MORSE CODE CONVERTER|")
-        print("\n1. Enter 1 to convert text to code\n")
+        print("\n1. Enter 1 to convert text to code")
+        print("2. Enter 2 to convert code to text")
 
         option = input("Enter your option: ").lower()
 
