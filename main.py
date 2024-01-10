@@ -46,7 +46,6 @@ def converter(option):
     else:
         print("\nYou have chosen the wrong option, Please choose one of the available options\n")
 
-
 def start():
     should_continue = True
     while should_continue:
